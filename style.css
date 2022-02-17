@@ -63,17 +63,7 @@ body {
     display: flex;
 }
 
-/* .images-section {
-    width: 300px;
-    height: 300px;
-}
-
-.text-section {
-    width: 300px;
-    height: 300px;
-} */
-
-.image-1 {
+.images-section {
     width: 300px;
     height: 300px;
     background-image: url("./images/bg-pattern-desktop.svg");
@@ -85,9 +75,52 @@ body {
     left: -5px;
 }
 
+.image-1 {
+    width: 300px;
+    height: 230px;
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+    background-position: left 25%;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    position: relative;
+    bottom: -25px;
+    left: -25px;
+}
+
 .image-2 {
-    background-image: url("./images/illustration-box-desktop.svg");
+    width: 100px;
+    height: 100px;
+    background-image: url('./images/illustration-box-desktop.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    bottom: 75px;
+    left: -50px;
+}
+
+.text-section {
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    margin: 10px;
+}
+
+.question-box {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    font-size: 11px;
+    color: hsl(237, 12%, 33%);
+}
+
+.question-box img {
+    width: 5px;
+    height: 5px;
+}
+
+.answer {
+    display: none;
 }
