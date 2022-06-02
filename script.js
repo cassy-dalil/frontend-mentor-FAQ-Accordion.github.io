@@ -1,11 +1,43 @@
 let downArrow1 = document.querySelector("#down-arrow1");
-let answerText = document.getElementsByClassName("answer");
-let question = document.getElementsByClassName("question-box");
+let downArrow2 = document.querySelector("#down-arrow2");
+let downArrow3 = document.querySelector("#down-arrow3");
+let downArrow4 = document.querySelector("#down-arrow4");
+let downArrow5 = document.querySelector("#down-arrow5");
+// let question = document.getElementsByClassName("question-box");
 
 
-function showAnswer() {
-    answerText.classList.add('show');
-    question.style.fontWeight = "bold";
+function showAnswer1() {
+    document.getElementById("answer-1").classList.toggle("show");
+    document.getElementById("question-1").style.fontWeight = "800";
+    downArrow1.style.transform = 'rotate(180deg)';
 }
 
-downArrow1.addEventListener("click", showAnswer);
+downArrow1.addEventListener("click", showAnswer1);
+
+function showAnswer2() {
+    document.getElementById("answer-2").classList.toggle("show");
+    document.getElementById("question-2").style.fontWeight = "800";
+}
+
+downArrow2.addEventListener("click", showAnswer2);
+
+function showAnswer3() {
+    document.getElementById("answer-3").classList.toggle("show");
+    document.getElementById("question-3").style.fontWeight = "800";
+}
+
+downArrow3.addEventListener("click", showAnswer3);
+
+function showAnswer4() {
+    document.getElementById("answer-4").classList.toggle("show");
+    document.getElementById("question-4").style.fontWeight = "800";
+}
+
+downArrow4.addEventListener("click", showAnswer4);
+
+function showAnswer5() {
+    document.getElementById("answer-5").classList.toggle("show");
+    document.getElementById("question-5").style.fontWeight = "800";
+}
+
+downArrow5.addEventListener("click", showAnswer5);
